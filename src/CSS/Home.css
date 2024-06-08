@@ -1,3 +1,116 @@
-* {
-    background-color: black;
+/* 전체 설정 */
+.Home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+/* 제목 위치 설정 */
+.Home-Title {
+    position: absolute;
+    top: 8%;
+    left: 18%;
+    z-index: 10;
+}
+
+/* 백그라운드 원 위치, 크기, 효과 설정 */
+.Circles {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 770px;
+    height: 770px;
+    filter: blur(60px);
+    border-radius: 50%;
+    background: var(--current-color);
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 0px 100px 50px rgba(165, 226, 136, 0.4);
+    transition: background 3s ease-in-out;
+}
+
+/* Gomean 설명 글 위치, 크기, 굵기, 색 설정 */
+.Content-Text {
+    position: absolute;
+    top: 330px;
+    left: 400px;
+    color: white;
+    z-index: 1000;
+}
+
+.Title {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.Content {
+    font-size: 15px;
+}
+
+.SubContent {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/* 지정색 설명 글 위치, 크기, 굵기, 색 설정 */
+.Explanation-Text {
+    position: absolute;
+    top: 82%;
+    margin-bottom: -900px;
+    color: white;
+    z-index: 1000;
+}
+
+.Explanation,
+.Color {
+    float: left;
+}
+
+.Explanation {
+    font-weight: bold;
+}
+
+.Color {
+    margin-right: 20px;
+}
+
+/* 버튼 위치, 크기, 색, 효과 설정 */
+nav {
+    position: fixed;
+    left: calc(50% - 150px);
+    bottom: 120px;
+    z-index: 1; 
+}
+
+.Button-back {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 88%;
+    padding: 10px;
+    margin-bottom: -1050px;
+    width: 300px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+
+.Slide-btn {
+    padding: 10px 20px;
+    height: 55px;
+    font-size: 16px;
+    border: none;
+    border-radius: 40px;
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+}
+  
+.Slide-btn:active {
+    background-color: rgba(255, 255, 255, 0.3);
 }

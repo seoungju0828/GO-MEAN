@@ -1,0 +1,65 @@
+.carousel-container {
+    width: 600px;
+    height: 600px;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    /* border: 2px solid red; */
+  }
+  
+  .carousel-wrapper {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .carousel-item {
+    min-width: 600px;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* .carousel-item img {
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+  } */
+
+  .carousel-item.slide-0 img {
+    position: absolute;
+    top: -5%;
+    width: 690px;
+    height: 690px;
+  }
+
+  .carousel-item.slide-3 img {
+    position: absolute;
+    top: -15%;
+  }
+
+  .carousel-item.slide-2 img {
+    position: absolute;
+    top: -15%;
+  }
+
+  .carousel-item.slide-4 img  {
+    position: absolute;
+    top: 2%;
+  }
+
+  .carousel-item.slide-5 img {
+    position: absolute;
+    width: 650px;
+    height: 650px;
+  }
+  
+  /* .carousel-item.slide-1 img {
+    width: 1000px;
+  } */
+  
+  /* 나머지 이미지에 대한 스타일 */
+  
+  
